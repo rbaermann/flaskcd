@@ -1,0 +1,23 @@
+* {
+    margin: -3px;
+    padding: 0;
+}
+
+.wrapper {
+    /* background-color: aliceblue; */
+    /* width: 970px; */
+    /* height: 1000px; */
+    text-align: center;
+    margin: auto;
+}
+
+.checkerBox {
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+}
+
+.down {
+    display: block;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="checkerboard" content="I am making a dynamic checkerboard that can change size on wim.">
+        <title>Checkerboard</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div class="wrapper">
+            {% for i in range(times1): %}
+                {% if i % 2 == 0 %}
+                    <div class='down'>
+                        {% for j in range(times): %}
+                            {% if j % 2 == 0 %}
+                                <div class="checkerBox" style="background-color: {{ color }}"></div>
+                            {% else %}
+                                <div class="checkerBox" style="background-color: {{ color1 }}"></div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="down">
+                        {% for j in range(times): %}
+                            {% if j % 2 == 0 %}
+                                <div class="checkerBox" style="background-color: {{ color1 }}"></div>
+                            {% else %}
+                                <div class="checkerBox" style="background-color: {{ color }}"></div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+            </script>
+        </div>
+    </body>
+</html>
