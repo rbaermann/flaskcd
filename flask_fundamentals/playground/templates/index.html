@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="playground" content="I am making a simple site where you can change the amount of blocks and the color of said blocks.">
+        <title>Playground</title>
+    </head>
+    <body>
+        <div class="wrapper" style="width: 970px; text-align: center; margin: auto;">
+            <h1>Welcome!</h1>
+           {% for x in range(0, times): %}
+            <div class="box" style="margin: auto; display: inline-block; height: 150px; width: 150px; background-color: {{ color }};"></div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
